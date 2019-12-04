@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Помощник последовательного порта</string>
+    <string name="qingchu">Удалить</string>
+    <string name="txt">Текст</string>
+    <string name="hex">Шестнадцатеричный</string>
+    <string name="ziqing">Автоматическое удаление</string>
+    <string name="n500">500</string>
+    <string name="ms">миллисекунда</string>
+    <string name="zidong">Автоматически</string>
+    <string name="fasong">Отправить</string>
+    <string name="n0">0</string>
+    <string name="com_tool">Инструмент последовательного порта</string>
+    <string name="ToggleButton">Кнопка-переключатель</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MacAddressDemo</string>
+    <string name="zyz_mac_address_rule">1、MAC地址格式：C8:32:55:XX:XX:XX \n1、MAC地址格式：C8:32:55:XX:XX:XX\n3、RCT系列的地址：C8:32:55:0X:XX:XX\n\t  RCC系列的地址：C8:32:55:1X:XX:XX\n4、该设置只对Android系统有效\n5、设置或读取MAC地址时系统在运行状态\n6、设置MAC地址只有1次机会，不可更改\n7、请将ARM的调试串口与PC串口连接</string>
+    <string name="zyz_system_mac_address">系统MAC地址</string>
+    <string name="zyz_line_code">条形码</string>
+    <string name="zyz_mac_address">MAC地址</string>
+    <string name="zyz_write_into">写入</string>
+    <string name="zyz_read">读取</string>
+    <string name="zyz_exit">退出</string>
+</resources>

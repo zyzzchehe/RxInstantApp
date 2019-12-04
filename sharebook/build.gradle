@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    //return new Date().format("yyyy-MM-dd HH-mm")
+    return new Date().format("yyyy-MM-dd")
+}
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.rocktech.sharebookcase"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        compileOptions{
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //配置apk生成名字
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "sharebook_${defaultConfig.versionName}_${releaseTime()}.apk"
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+/*task ndkBuild(type: Exec) {
+    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        commandLine 'D:\\android_sdk\\ndk-bundle\\ndk-build.cmd', '-C', file('src/main').absolutePath
+    } else {
+        commandLine 'D:\\android_sdk\\ndk-bundle', '-C', file('src/main').absolutePath
+    }
+}
+
+tasks.withType(JavaCompile) {
+    compileTask -> compileTask.dependsOn ndkBuild
+}*/
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation project(path:':usbserialforandroid')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation files('libs/alipay-trade-sdk-20161215.jar')
+    implementation files('libs/commons-logging-1.1.1.jar')
+    implementation files('libs/commons-lang-2.6.jar')
+    implementation files('libs/alipay-sdk-java20161213173952.jar')
+    implementation files('libs/AndroidBleApi_V1.1.1.jar')
+    implementation files('libs/autobahn-0.5.0.jar')
+    implementation files('libs/Serialport-module.jar')
+    implementation files('libs/RFID.jar')
+
+}

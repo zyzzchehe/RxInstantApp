@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RxInstantApp.iml" filepath="$PROJECT_DIR$/RxInstantApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcast-receive/broadcast-receive.iml" filepath="$PROJECT_DIR$/broadcast-receive/broadcast-receive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcast-send/broadcast-send.iml" filepath="$PROJECT_DIR$/broadcast-send/broadcast-send.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comtool/comtool.iml" filepath="$PROJECT_DIR$/comtool/comtool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customview/customview.iml" filepath="$PROJECT_DIR$/customview/customview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dialogtest/dialogtest.iml" filepath="$PROJECT_DIR$/dialogtest/dialogtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamicpermissionapplytest/dynamicpermissionapplytest.iml" filepath="$PROJECT_DIR$/dynamicpermissionapplytest/dynamicpermissionapplytest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gpiotestsz/gpiotestsz.iml" filepath="$PROJECT_DIR$/gpiotestsz/gpiotestsz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageloader/imageloader.iml" filepath="$PROJECT_DIR$/imageloader/imageloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/languagedemo/languagedemo.iml" filepath="$PROJECT_DIR$/languagedemo/languagedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/macaddresstest/macaddresstest.iml" filepath="$PROJECT_DIR$/macaddresstest/macaddresstest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openlocktest/openlocktest.iml" filepath="$PROJECT_DIR$/openlocktest/openlocktest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qxdmlogget/qxdmlogget.iml" filepath="$PROJECT_DIR$/qxdmlogget/qxdmlogget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclelogprint/recyclelogprint.iml" filepath="$PROJECT_DIR$/recyclelogprint/recyclelogprint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/runtimedemo/runtimedemo.iml" filepath="$PROJECT_DIR$/runtimedemo/runtimedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/screenreso/screenreso.iml" filepath="$PROJECT_DIR$/screenreso/screenreso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serialsettest/serialsettest.iml" filepath="$PROJECT_DIR$/serialsettest/serialsettest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sutest/sutest.iml" filepath="$PROJECT_DIR$/sutest/sutest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/switchcontrol-client/switchcontrol-client.iml" filepath="$PROJECT_DIR$/switchcontrol-client/switchcontrol-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/switchcontrol-server/switchcontrol-server.iml" filepath="$PROJECT_DIR$/switchcontrol-server/switchcontrol-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testfcboxinstall/testfcboxinstall.iml" filepath="$PROJECT_DIR$/testfcboxinstall/testfcboxinstall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usbdeveloptest/usbdeveloptest.iml" filepath="$PROJECT_DIR$/usbdeveloptest/usbdeveloptest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usbdevicetest/usbdevicetest.iml" filepath="$PROJECT_DIR$/usbdevicetest/usbdevicetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usbserialforandroid/usbserialforandroid.iml" filepath="$PROJECT_DIR$/usbserialforandroid/usbserialforandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xgpush/xgpush.iml" filepath="$PROJECT_DIR$/xgpush/xgpush.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:background="#5CACEE"
+    android:layout_height="100dp">
+    <Button
+        android:id="@+id/btn_buy"
+        android:text="购买"
+        android:textSize="40sp"
+        android:background="@drawable/buy_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+</LinearLayout>

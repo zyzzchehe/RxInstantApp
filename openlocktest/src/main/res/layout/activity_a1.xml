@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.example.openlocktest.LockTestActivity">
+    <TextView
+        android:layout_marginTop="100dp"
+        android:textColor="#104E8B"
+        android:textSize="50sp"
+        android:gravity="center_horizontal"
+        android:text="瑞迅中间层测试"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:layout_marginTop="80dp"
+        android:id="@+id/sp_485_select"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/et_board_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:hint="请输入板地址……" />
+    <EditText
+        android:id="@+id/et_lock_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:hint="请输入锁编号……" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_name_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="发送：" />
+        <TextView
+            android:id="@+id/tv_send_display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_name_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="接收：" />
+        <TextView
+            android:id="@+id/tv_display"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--add zyz-->
+    <View
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#000"/>
+    <LinearLayout
+        android:id="@+id/llfsjrqmc"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Switch
+                android:id="@+id/swFSA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="风扇A "
+                android:textOff="OFF"
+                android:textOn="ON" />
+            <Switch
+                android:id="@+id/swJRQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加热器"
+                android:textOff="OFF"
+                android:textOn="ON" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Switch
+                android:id="@+id/swFSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="风扇B "
+                android:textOff="OFF"
+                android:textOn="ON" />
+            <Switch
+                android:id="@+id/swMCD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="门磁灯"
+                android:textOff="OFF"
+                android:textOn="ON" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnGetControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取控制权" />
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#000"/>
+    <Switch
+        android:layout_marginTop="30dp"
+        android:id="@+id/swMainLightBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主柜开灯"
+        android:textOff="OFF"
+        android:textOn="ON" />
+    <Switch
+        android:id="@+id/swLightBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="辅柜开灯"
+        android:textOff="OFF"
+        android:textOn="ON" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#000"/>
+
+
+
+    <Button
+        android:onClick="testXhOpenLock"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试循环开锁"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试500ms开锁"
+        android:onClick="testOpen"/>
+</LinearLayout>

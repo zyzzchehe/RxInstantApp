@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ComAssistant</string>
+    <string name="qingchu">Clear</string>
+    <string name="txt">Txt</string>
+    <string name="hex">Hex</string>
+    <string name="ziqing">Auto Clear</string>
+    <string name="n500">500</string>
+    <string name="ms">MS</string>
+    <string name="zidong">Auto</string>
+    <string name="fasong">Send</string>
+    <string name="n0">0</string>
+    <string name="com_tool">ComTool</string>
+    <string name="ToggleButton">Toggle Button</string>
+</resources>

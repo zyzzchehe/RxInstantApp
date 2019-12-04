@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.bjw.ComAssistant"
+        minSdkVersion 17
+        targetSdkVersion 29
+
+        ndk {
+            moduleName "serial_port"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    sourceSets.main {
+        jni.srcDirs = []
+        jniLibs.srcDir 'src/main/libs'
+    }
+}
+//
+//task ndkBuild(type: Exec) {
+//    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+//        commandLine 'D:\\lichanghua\\AndroidStudio_Sdk\\ndk-bundle\\ndk-build.cmd', '-C', file('src/main').absolutePath
+//    } else {
+//        commandLine 'D:\\lichanghua\\AndroidStudio_Sdk\\ndk-bundle', '-C', file('src/main').absolutePath
+//    }
+//}
+//
+//tasks.withType(JavaCompile) {
+//    compileTask -> compileTask.dependsOn ndkBuild
+//}

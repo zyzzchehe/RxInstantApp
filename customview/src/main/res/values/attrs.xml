@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 这里会写什么呢！，当然是我们的自定义属性 -->
+    <declare-styleable name="MyViewStyle" >
+        <attr name="mycontent" format="string" />
+        <attr name="isShow" format="boolean"/>
+        <attr name="mybackground" format="color"/>
+        <attr name="select" >
+            <flag name="s1" value="1"/>
+            <flag name="s2" value="2"/>
+            <flag name="s3" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

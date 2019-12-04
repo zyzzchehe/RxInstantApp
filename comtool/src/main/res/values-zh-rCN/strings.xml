@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">串口助手</string>
+    <string name="qingchu">清除</string>
+    <string name="txt">文本</string>
+    <string name="hex">十六进制</string>
+    <string name="ziqing">自清</string>
+    <string name="n500">500</string>
+    <string name="ms">毫秒</string>
+    <string name="zidong">自动</string>
+    <string name="fasong">发送</string>
+    <string name="n0">0</string>
+    <string name="com_tool">串口工具</string>
+    <string name="ToggleButton">开关按钮</string>
+</resources>

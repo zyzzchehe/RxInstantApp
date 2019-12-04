@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_marginTop="40dp"
+        android:textColor="#104E8B"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:text="重复开关机测试"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:background="#FAFAD2"
+        android:padding="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="设  备  重  启  次  数："/>
+        <EditText
+            android:id="@+id/editText"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入重启次数……"
+            android:inputType="number"
+            android:ems="10" >
+
+        </EditText>
+    </LinearLayout>
+    <Spinner
+        android:layout_marginTop="20dp"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:id="@+id/sp_select_time"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:background="#FFA07A"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="给 电 持 续 时 间(s)："/>
+        <EditText
+            android:id="@+id/et_give_power"
+            android:layout_marginLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="请输入给电持续时间..."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:background="#FFC0CB"
+        android:padding="15dp"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="关机 持续 时间(ms)："/>
+        <EditText
+            android:id="@+id/et_shut_power"
+            android:layout_marginLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入关机持续时间..."/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_begin"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#90EE90"
+        android:textSize="30sp"
+        android:text="开始测试" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:background="#90EE90"
+            android:text="取消测试"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/line_parent"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_execute_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#008000"
+            android:text="已重启次数" />
+
+        <TextView
+            android:id="@+id/tv_rest_count"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#FF0000"
+            android:text="剩余次数" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:text="失败次数" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:visibility="gone"
+            android:text="失败率 0.0%" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">RxInstantApp</string>
+    <string name="timer_format" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+</resources>
