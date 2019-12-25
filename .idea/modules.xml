@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/comtool/comtool.iml" filepath="$PROJECT_DIR$/comtool/comtool.iml" />
       <module fileurl="file://$PROJECT_DIR$/customview/customview.iml" filepath="$PROJECT_DIR$/customview/customview.iml" />
       <module fileurl="file://$PROJECT_DIR$/dialogtest/dialogtest.iml" filepath="$PROJECT_DIR$/dialogtest/dialogtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dian9imagetest/dian9imagetest.iml" filepath="$PROJECT_DIR$/dian9imagetest/dian9imagetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/dynamicpermissionapplytest/dynamicpermissionapplytest.iml" filepath="$PROJECT_DIR$/dynamicpermissionapplytest/dynamicpermissionapplytest.iml" />
       <module fileurl="file://$PROJECT_DIR$/gpiotestsz/gpiotestsz.iml" filepath="$PROJECT_DIR$/gpiotestsz/gpiotestsz.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageloader/imageloader.iml" filepath="$PROJECT_DIR$/imageloader/imageloader.iml" />
@@ -17,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/openlocktest/openlocktest.iml" filepath="$PROJECT_DIR$/openlocktest/openlocktest.iml" />
       <module fileurl="file://$PROJECT_DIR$/qxdmlogget/qxdmlogget.iml" filepath="$PROJECT_DIR$/qxdmlogget/qxdmlogget.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclelogprint/recyclelogprint.iml" filepath="$PROJECT_DIR$/recyclelogprint/recyclelogprint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reflecttest/reflecttest.iml" filepath="$PROJECT_DIR$/reflecttest/reflecttest.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtimedemo/runtimedemo.iml" filepath="$PROJECT_DIR$/runtimedemo/runtimedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/screenreso/screenreso.iml" filepath="$PROJECT_DIR$/screenreso/screenreso.iml" />
       <module fileurl="file://$PROJECT_DIR$/serialsettest/serialsettest.iml" filepath="$PROJECT_DIR$/serialsettest/serialsettest.iml" />
