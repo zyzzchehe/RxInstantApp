@@ -18,14 +18,14 @@
             </intent-filter>
         </activity>
 
-        <!--<receiver
+        <receiver
             android:name=".StaticRegisterReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
-        </receiver>-->
+        </receiver>
     </application>
 
 </manifest>

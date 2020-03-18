@@ -19,7 +19,7 @@ import android_serialport_api.SerialPort;
 public class Locker {
 	private Context mBase;
 	private static final String TAG = "zyz";
-	private SerialPort lock;
+	public SerialPort lock;
 	private boolean bb;
 
 	private static final int FLAG_TEST_BIN = 20;
@@ -179,6 +179,31 @@ public class Locker {
 	};
 
 
+
+	public void testCoffee(byte bt){
+		byte[] bytes = new byte[17];
+		bytes[0] = 0x55;
+		bytes[1] = (byte) 0xAA;
+		bytes[2] = (byte) 0x81;
+		bytes[3] = 0x18;
+		bytes[4] = bt;
+		bytes[5] = 0x55;
+		bytes[6] = 0x03;
+		bytes[7] = 0x28;
+		bytes[8] = 0x14;
+		bytes[9] = 0x00;
+		bytes[10] = 0x00;
+		bytes[11] = 0x00;
+		bytes[12] = 0x00;
+		bytes[13] = 0x00;
+		bytes[14] = (byte) 0xAA;
+		bytes[15] = (byte) 0xBB;
+		bytes[16] = 0x44;
+		lock.start();
+		lock.sendData(bytes);
+	}
+
+
 	public Locker(Context context,String node) {
 		Constant.COM_LOCKER = node;
 		mBase = context;
@@ -194,7 +219,7 @@ public class Locker {
 							} else {
 								LISHIZHI = byteMerger(LISHIZHI, subBytes(buffer, 0, size));
 							}
-                            //Constant.byteToHex("TEST 接收",LISHIZHI.length,LISHIZHI);
+							//Constant.byteToHex("TEST 接收",LISHIZHI.length,LISHIZHI);
 							/*如果接收到数据*/
 							if(LISHIZHI.length>0){
 								Constant.aFlag = true;
@@ -270,7 +295,7 @@ public class Locker {
 								}
 							}*/
 						}
-					}, 1300);
+					}, 5000);
 			Log.v(TAG, "===锁控版初始化成功!====");
 
 		} catch (Exception e) {

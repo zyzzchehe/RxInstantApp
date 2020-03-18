@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <compositeConfiguration>
-          <compositeBuild compositeDefinitionSource="SCRIPT" />
-        </compositeConfiguration>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-4.1" />
@@ -13,17 +13,24 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/backlighttestdemo" />
             <option value="$PROJECT_DIR$/broadcast-receive" />
             <option value="$PROJECT_DIR$/broadcast-send" />
+            <option value="$PROJECT_DIR$/comtool" />
+            <option value="$PROJECT_DIR$/customview" />
+            <option value="$PROJECT_DIR$/dialogtest" />
+            <option value="$PROJECT_DIR$/dian9imagetest" />
             <option value="$PROJECT_DIR$/dynamicpermissionapplytest" />
             <option value="$PROJECT_DIR$/gpiotestsz" />
+            <option value="$PROJECT_DIR$/imageloader" />
+            <option value="$PROJECT_DIR$/languagedemo" />
             <option value="$PROJECT_DIR$/macaddresstest" />
             <option value="$PROJECT_DIR$/openlocktest" />
             <option value="$PROJECT_DIR$/qxdmlogget" />
             <option value="$PROJECT_DIR$/recyclelogprint" />
+            <option value="$PROJECT_DIR$/reflecttest" />
             <option value="$PROJECT_DIR$/screenreso" />
             <option value="$PROJECT_DIR$/serialsettest" />
-            <option value="$PROJECT_DIR$/sharebook" />
             <option value="$PROJECT_DIR$/sutest" />
             <option value="$PROJECT_DIR$/switchcontrol-client" />
             <option value="$PROJECT_DIR$/switchcontrol-server" />
@@ -31,10 +38,10 @@
             <option value="$PROJECT_DIR$/usbdeveloptest" />
             <option value="$PROJECT_DIR$/usbdevicetest" />
             <option value="$PROJECT_DIR$/usbserialforandroid" />
+            <option value="$PROJECT_DIR$/xgpush" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
-        <option name="testRunner" value="PLATFORM" />
       </GradleProjectSettings>
     </option>
   </component>
